@@ -3,14 +3,20 @@
 
 import random
 
-numero_random = random.randint(1,100)
-
-while(True):
+def main():
+    numero_random = random.randint(1,100)
     numero = int(input("Ingrese un número: "))
-    if numero > numero_random:
-        print("El numero ingresado es demasiado alto")
-    elif numero < numero_random:
-        print("El numero ingresado es demasiado bajo")
-    else:
-        print("Encontraste el numero generado aleatoriamente")
-        break
+    #print(f"Número random: {numero_random}") #Testing
+
+    while(numero != numero_random):
+        if numero > numero_random:
+            print("El numero ingresado es demasiado alto")
+        if numero < numero_random:
+            print("El numero ingresado es demasiado bajo")
+        numero = int(input("Ingrese un número: "))
+
+    print("Encontraste el numero generado aleatoriamente")
+    print(f"Número random: {numero_random}")
+
+if __name__ == '__main__':
+    main()

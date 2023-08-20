@@ -3,3 +3,10 @@
 # terminar. Después se debe mostrar por pantalla la lista de la compra y el coste total, con el
 # siguiente formato:
 
+def main():
+    lista_compra = {}
+
+    
+
+if __name__ == '__main__':
+    main()
