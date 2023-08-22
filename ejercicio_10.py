@@ -20,12 +20,14 @@ def main():
     if len(lista_compra) == 0:
         print("La lista de compra esta vacía")
     else:
-        print("Lista de compra")
+        print("Lista de compra:")
         print("")
         for i in lista_compra:
-            print(f"{i}   {lista_compra[i]}")
+            #print(f"{i}   {lista_compra[i]}")
+            print(i.ljust(15) + str(lista_compra[i]).rjust(15))
             total+=lista_compra[i]
-        print(f"Total   {total}")
+        #print(f"Total   {total}")
+        print("Total".ljust(15) + str(total).rjust(15))
 
 if __name__ == '__main__':
     main()

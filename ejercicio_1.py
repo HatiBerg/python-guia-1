@@ -10,12 +10,12 @@ def main():
 
     while(numero != numero_random):
         if numero > numero_random:
-            print("El numero ingresado es demasiado alto")
+            print("El numero ingresado es demasiado alto, intentelo de nuevo")
         if numero < numero_random:
-            print("El numero ingresado es demasiado bajo")
+            print("El numero ingresado es demasiado bajo, intentelo de nuevo")
         numero = int(input("Ingrese un número: "))
 
-    print("Encontraste el numero generado aleatoriamente")
+    print("Encontraste el número generado aleatoriamente")
     print(f"Número random: {numero_random}")
 
 if __name__ == '__main__':
